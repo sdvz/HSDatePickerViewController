@@ -97,5 +97,12 @@ typedef enum : NSUInteger {
  *  Back button title
  */
 @property (nonatomic, strong) NSString *backButtonTitle;
-
+/**
+ *  Segmented control
+ */
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+/**
+ *  Reminders enabled switch
+ */
+@property (weak, nonatomic) IBOutlet UISwitch *enableRemindersSwitch;
 @end

@@ -42,7 +42,7 @@ static NSInteger kBufforRows = 30; //Number of rows that are prevent by scroll p
 @property (nonatomic, assign) NSInteger maxRowIndex;
 @property (nonatomic, assign) NSInteger minRowIndex;
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+
 @property (nonatomic, assign) UIStatusBarStyle previousStatusBarStyle;
 @end
 
