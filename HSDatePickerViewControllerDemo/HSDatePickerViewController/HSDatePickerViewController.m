@@ -14,6 +14,13 @@ typedef enum : NSUInteger {
     MinutePicker = 2,
 } HSDatePickerType;
 
+typedef enum : NSUInteger {
+    NeverSegment = 0,
+    DailySegment = 1,
+    WeeklySegment = 2,
+    MonthlySegment = 3
+} HSDatePickerSelectedIntervalSegment;
+
 static NSInteger kRowsMultiplier = 200;
 static NSInteger kBufforRows = 30; //Number of rows that are prevent by scroll picker to end
 
@@ -35,6 +42,7 @@ static NSInteger kBufforRows = 30; //Number of rows that are prevent by scroll p
 @property (nonatomic, assign) NSInteger maxRowIndex;
 @property (nonatomic, assign) NSInteger minRowIndex;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (nonatomic, assign) UIStatusBarStyle previousStatusBarStyle;
 @end
 
